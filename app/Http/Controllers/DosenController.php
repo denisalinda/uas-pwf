@@ -14,10 +14,10 @@ class DosenController extends Controller
         return view('dosen.profil', compact('tittle', 'profil'));
     }
 
-    public function profil()
+    public function ampu()
     {
         $profil=DosenModel::all();
-        $tittle="Data Pengampu";
-        return view('dosen.datapengampu', compact('tittle', 'data_pengampu'));
+        $tittle="Data ampu";
+        return view('dosen.ampu', compact('tittle', 'data_ampu'));
     }
 }
